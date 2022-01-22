@@ -34,7 +34,7 @@ def clean_education(x):
 
 @st.cache
 def load_data():
-    survey=pd.read_csv('survey_results_public.csv')
+    survey=pd.read_csv('survey_results_public.zip' ,compression='zip', header=0, sep=',', quotechar='"')
     survey=survey[['Country','EdLevel','YearsCodePro','Employment','ConvertedComp']]
     survey=survey.rename({'ConvertedComp':'Salary'},axis=1)
     survey=survey[survey['Salary'].notnull()]
