@@ -67,7 +67,7 @@ def show_explore_page():
     ax1.axis=('equal')#Equal aspect ratio ensures that pie is drawn as a circle
 
 
-    st.write("""#### Number of Data from diffrent countries""")
+    st.write("""#### Number of Data from different countries""")
     st.pyplot(fig1)
 
     st.write( 
